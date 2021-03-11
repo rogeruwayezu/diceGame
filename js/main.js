@@ -22,8 +22,14 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
     //2. Display the result
     document.getElementById("dice-1").style.display = "block";
     document.getElementById("dice-2").style.display = "block";
-    document.getElementById("dice-1").src = "../img/dice-" + dice1 + ".png";
-    document.getElementById("dice-2").src = "../img/dice-" + dice2 + ".png";
+    document.getElementById("dice-1").src =
+      "https://res.cloudinary.com/dgdnxieva/image/upload/v1615478942/img-dice/dice-" +
+      dice1 +
+      ".png";
+    document.getElementById("dice-2").src =
+      "https://res.cloudinary.com/dgdnxieva/image/upload/v1615478942/img-dice/dice-" +
+      dice2 +
+      ".png";
 
     //3. Update the round score IF the rolled number was NOT a 1
     if (dice1 !== 1 && dice2 !== 1) {
